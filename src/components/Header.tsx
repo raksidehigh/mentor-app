@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import edumentorLogo from '@/assets/logo/edumentor-logo.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -93,10 +94,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-4">
             <Link to="/dashboard" className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">EG</span>
-              </div>
-              <span className="font-semibold text-lg hidden sm:inline-block">EduGuide</span>
+              <img src={edumentorLogo} alt="EduMentor" className="h-10 w-auto" />
             </Link>
           </div>
 

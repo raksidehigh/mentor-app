@@ -121,7 +121,7 @@ const MentorDashboard = () => {
   };
 
   const copyReferralLink = () => {
-    navigator.clipboard.writeText('https://mentor.app/ref/john-doe');
+    navigator.clipboard.writeText('https://edumentor.io/ref/john-doe');
     // You could add a toast notification here
   };
 
@@ -537,7 +537,7 @@ const MentorDashboard = () => {
                 <div>
                   <label className="text-sm font-medium mb-2 block">Your Referral Link</label>
                   <div className="flex items-center space-x-2">
-                    <code className="text-sm bg-muted px-3 py-2 rounded flex-1">https://eduguide.com/ref/john-doe</code>
+                    <code className="text-sm bg-muted px-3 py-2 rounded flex-1">https://edumentor.io/ref/john-doe</code>
                     <Button size="sm" variant="outline" onClick={copyReferralLink} className="button-scale">Copy</Button>
                   </div>
                 </div>
